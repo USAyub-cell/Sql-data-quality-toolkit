@@ -1,13 +1,31 @@
-# Data Quality Rule Catalogue
+# PostgreSQL Data Quality Toolkit
 
-| Rule | Dimension | Test | Failure condition | Migration impact |
-|---|---|---|---|---|
-| DQ-001 | Uniqueness | Duplicate_Flag | Value is not `No` | Block |
-| DQ-002 | Completeness | Email | Blank/null or Missing_Email = Yes | Block |
-| DQ-003 | Governance | Source_of_Truth | Value is not `Confirmed` | Block |
-| DQ-004 | Validity | Validation_Status | Value is not `Validated` | Block |
-| DQ-005 | Overall Quality | Data_Quality_Status | Value is not `Clean` | Block |
+Reusable SQL examples for people-data profiling, duplicate identification, completeness checks, source-of-truth validation and migration-readiness assessment.
 
-## Control principle
+## Demonstrated skills
 
-A migration-ready record must pass every blocking rule.
+- PostgreSQL
+- data profiling
+- uniqueness testing
+- completeness testing
+- validation rules
+- source-of-truth controls
+- migration-readiness logic
+- exception reporting
+- KPI reconciliation
+
+## Portfolio dataset baseline
+
+The demonstration dataset contains 200 synthetic employee records:
+
+- 5 duplicate-flagged records
+- 6 missing-email records
+- 11 unresolved source-of-truth records
+- 189 migration-ready records
+
+See `people_data_quality_queries.sql`.
+
+## Portfolio note
+
+The dataset and results are part of Project APEX, a professional capstone consulting simulation.
+
